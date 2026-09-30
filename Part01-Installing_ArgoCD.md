@@ -19,7 +19,7 @@ You should see one node in `Ready` state.
 
 > **Git setup:** Make sure you've reviewed the [GitHub Access Guide](GITHUB-ACCESS.md) and chosen how you'll push to GitHub before continuing.
 
-This tutorial uses a Git repository containing exercise files, configuration, and sample manifests.
+This tutorial uses a Git repository containing exercise files, configuration, and sample manifests. You'll fork it because ArgoCD needs a Git repo it can read from, throughout the tutorial you'll point ArgoCD at your fork so that commits and pushes you make trigger GitOps syncs. Working against the original upstream repo would not let you make changes.
 
 1. In your browser, fork `https://github.com/esnet/tutorial-argocd-tx2026` to your GitHub account
 2. On your VM (Terminal 1):

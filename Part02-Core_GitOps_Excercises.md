@@ -89,6 +89,8 @@ Or via CLI, on the **VM Terminal 1**:
 argocd app set podinfo --sync-policy automated --auto-prune --self-heal
 ```
 
+Note: The command above should have no output, but it will still succeed.
+
 ### Test auto-sync
 
 Edit `p2-podinfo/deployment.yaml`; change `replicas: 1` to `replicas: 3`:
