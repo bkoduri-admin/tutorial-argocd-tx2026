@@ -217,14 +217,14 @@ argocd app sync podinfo-helm
 
 ```bash
 kubectl get pods -n podinfo-helm
-curl localhost:32899 | jq .message
+curl localhost:32199 | jq .message
 # Should show "Helm-deployed podinfo!"
 ```
 
 You now have two podinfo instances:
 
 - Plain manifests: `http://<your-vm-ip>:32098`
-- Helm chart: `http://<your-vm-ip>:32899`
+- Helm chart: `http://<your-vm-ip>:32199`
 
 Open both in your browser to compare.
 
